@@ -19,6 +19,7 @@
     "sirv": "^2.0.4"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.64",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
