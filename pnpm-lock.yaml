@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@unocss/reset':
+    specifier: ^0.58.5
+    version: 0.58.5
   compression:
     specifier: ^1.7.4
     version: 1.7.4
@@ -990,7 +993,6 @@ packages:
 
   /@unocss/reset@0.58.5:
     resolution: {integrity: sha512-2wMrkCj3SSb5hrx9TKs5jZa34QIRkHv9FotbJutAPo7o8hx+XXn56ogzdoUrcFPJZJUx2R2nyOVbSlGMIjtFtw==}
-    dev: true
 
   /@unocss/rule-utils@0.58.5:
     resolution: {integrity: sha512-w0sGJoeUGwMWLVFLEE9PDiv/fQcQqZnTIIQLYNCjTdqXDRlwTp9ACW0h47x/hAAIXdOtEOOBuTfjGD79GznUmA==}
