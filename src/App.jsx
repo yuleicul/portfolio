@@ -12,10 +12,10 @@ function App() {
 
       <main className="bg-brand-2 text-brand-1 flex-1 py-40 px-20">
         <section className="pb-40">
-          <h1 className="text-5xl pb-4 font-montserrat font-bold">
+          <h1 className="text-4xl pb-3 font-montserrat font-bold">
             I'm Yulei Chen
           </h1>
-          <p className="text-2xl">I know nothing about JavaScript.</p>
+          <p className="text-xl">I know nothing about JavaScript.</p>
         </section>
 
         <Item

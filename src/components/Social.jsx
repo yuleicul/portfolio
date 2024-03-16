@@ -4,7 +4,7 @@ function Social() {
       <img
         alt="Yulei Chen"
         src="https://github.com/yuleicul.png"
-        className="h-40 w-40 rounded-full"
+        className="h-40 w-40 rounded-full hue-rotate-[var(--img-hue-rotate)]"
       />
       <div className="flex gap-3">
         <div className="i-mdi-github text-3xl" />
