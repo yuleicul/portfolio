@@ -1,5 +1,5 @@
 import { defineConfig, presetUno, presetIcons, presetWebFonts } from 'unocss'
-import { THEME } from './src/constants'
+import { THEME } from './src/common/constants'
 
 export default defineConfig({
   presets: [
@@ -27,5 +27,15 @@ export default defineConfig({
     ...Object.values(THEME).map((theme) => `to-${theme.brand1}`),
     'from-brand-2',
     'to-brand-1',
+  ],
+  rules: [
+    [
+      'animate-scale',
+      {
+        animation: 'scaleOut 1s linear 1',
+      },
+    ],
+    ['h-2full', { height: 'max(200vh, 200vw)' }],
+    ['w-2full', { width: 'max(200vh, 200vw)' }],
   ],
 })

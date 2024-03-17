@@ -12,12 +12,13 @@ function App() {
       </header>
 
       <div className="flex font-merriweather">
-        <aside className="bg-brand-1 text-brand-2 flex-1 py-14 px-20 flex justify-end">
+        <aside className="bg-brand-1 text-brand-2 flex-1 py-14 px-20 flex justify-end transition-property-background-color transition-150 transition-delay-600">
           <Social />
         </aside>
 
-        <main className="bg-brand-2 text-brand-1 flex-1 py-40 px-20">
-          <section className="pb-40">
+        <main className="bg-brand-2 text-brand-1 flex-1 py-40 px-20 transition-property-background-color transition-150 transition-delay-600">
+          {/* `relative` below makes this section an extra layer on the website, which cannot be overlaid by `scaleOut` animation */}
+          <section className="pb-40 relative">
             <h1 className="text-4xl pb-3 font-montserrat font-bold">
               I'm Yulei Chen
             </h1>
