@@ -5,6 +5,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { LinksFunction } from "@remix-run/node";
+
+import globalStylesheetUrl from "./global-styles.css?url";
+
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: globalStylesheetUrl }];
+};
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,5 +32,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <div>
+      {/* todo: add background and theme toggle here */}
+      <Outlet />
+    </div>
+  );
 }
