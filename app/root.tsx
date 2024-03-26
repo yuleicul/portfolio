@@ -1,3 +1,5 @@
+import unocss from "unocss";
+import reset from "@unocss/reset/tailwind.css";
 import {
   Links,
   Meta,
@@ -5,6 +7,23 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { LinksFunction } from "@remix-run/node";
+
+import globalStylesheetUrl from "./global-styles.css?url";
+
+export const links: LinksFunction = () => {
+  return [
+    { rel: "stylesheet", href: globalStylesheetUrl },
+    {
+      rel: "stylesheet",
+      href: unocss,
+    },
+    {
+      rel: "stylesheet",
+      href: reset,
+    },
+  ];
+};
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,5 +44,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <div className="text-red-800 p-10">
+      {/* todo: add background and theme toggle here */}
+      <Outlet />
+    </div>
+  );
 }
