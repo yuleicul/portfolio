@@ -5,7 +5,7 @@ import BicolorCircle from "./BicolorCircle";
 import { THEME } from "../common/constants";
 import { setStyleProperty } from "../common/utils";
 
-function Dropdown() {
+function Dropdown({ className }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [theme, setTheme] = useState("theme0");
 
@@ -25,7 +25,7 @@ function Dropdown() {
 
   return (
     <div
-      className="flex flex-col items-center"
+      className={`flex flex-col items-center ${className}`}
       tabIndex={0}
       onBlur={() => setDropdownVisible(false)}
     >
