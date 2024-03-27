@@ -16,12 +16,15 @@ dependencies:
     version: 18.2.0(react@18.2.0)
 
 devDependencies:
+  '@iconify-json/mdi':
+    specifier: ^1.1.64
+    version: 1.1.64
   '@unocss/postcss':
     specifier: ^0.58.7
-    version: 0.58.7(postcss@8.4.31)
+    version: 0.58.7(postcss@8.4.38)
   unocss:
     specifier: ^0.58.7
-    version: 0.58.7(postcss@8.4.31)(vite@5.2.6)
+    version: 0.58.7(postcss@8.4.38)(vite@5.2.6)
 
 packages:
 
@@ -543,6 +546,12 @@ packages:
     dev: true
     optional: true
 
+  /@iconify-json/mdi@1.1.64:
+    resolution: {integrity: sha512-zGeo5TjhNFAY6FmSDBLAzDO811t77r6v/mDi7CAL9w5eXqKez6bIjk8R9AL/RHIeq44ALP4Ozr4lMqFTkHr7ug==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
@@ -889,7 +898,7 @@ packages:
       sirv: 2.0.4
     dev: true
 
-  /@unocss/postcss@0.58.7(postcss@8.4.31):
+  /@unocss/postcss@0.58.7(postcss@8.4.38):
     resolution: {integrity: sha512-4UhYTj7AaCDJKPEa9GX9L9dnH+6ci04i9ZYdNdu+Pvbki2Q2wAa2FwqLwH7+6WgWm10b9AXVacExw+4hC2reOg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -901,7 +910,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.2
       magic-string: 0.30.8
-      postcss: 8.4.31
+      postcss: 8.4.38
     dev: true
 
   /@unocss/preset-attributify@0.58.7:
@@ -1592,6 +1601,7 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
 
   /postcss@8.4.38:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
@@ -1775,7 +1785,7 @@ packages:
       mlly: 1.6.1
     dev: true
 
-  /unocss@0.58.7(postcss@8.4.31)(vite@5.2.6):
+  /unocss@0.58.7(postcss@8.4.38)(vite@5.2.6):
     resolution: {integrity: sha512-WZEG5+RWlMvuMX8qOpZI9PAwBlFpRMnGlOtQV3M6BHsUbEPvC7IPx1fr4I22XizctRfNftUG3MWe5l74CcoD7Q==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1791,7 +1801,7 @@ packages:
       '@unocss/cli': 0.58.7
       '@unocss/core': 0.58.7
       '@unocss/extractor-arbitrary-variants': 0.58.7
-      '@unocss/postcss': 0.58.7(postcss@8.4.31)
+      '@unocss/postcss': 0.58.7(postcss@8.4.38)
       '@unocss/preset-attributify': 0.58.7
       '@unocss/preset-icons': 0.58.7
       '@unocss/preset-mini': 0.58.7

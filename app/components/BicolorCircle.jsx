@@ -1,4 +1,4 @@
-function BicolorCircle({ from, to, className, ...props }) {
+function BicolorCircle({ from, to, className = "", ...props }) {
   return (
     <div
       className={`

@@ -1,10 +1,10 @@
-function Social() {
+function Social({ className = "" }) {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className={`flex flex-col items-center gap-6 ${className}`}>
       <img
         alt="Yulei Chen"
         src="/avatar.png"
-        className="h-40 w-40 hue-rotate-[var(--img-hue-rotate)]"
+        className="h-35 w-35 hue-rotate-[var(--img-hue-rotate)]"
       />
       <div className="flex gap-3">
         <div className="i-mdi-github text-3xl" />
@@ -12,7 +12,7 @@ function Social() {
         <div className="i-mdi-rss text-3xl" />
       </div>
     </div>
-  )
+  );
 }
 
-export default Social
+export default Social;

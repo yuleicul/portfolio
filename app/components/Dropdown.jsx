@@ -5,7 +5,7 @@ import BicolorCircle from "./BicolorCircle";
 import { THEME } from "../common/constants";
 import { setTheme } from "../common/utils";
 
-function Dropdown({ className }) {
+function Dropdown({ className = "" }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   useEffect(() => {
