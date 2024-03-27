@@ -18,11 +18,12 @@ export default function Home() {
           date="March 1, 2024"
           title="Step"
           description="My learning logs"
+          href="https://stepto.netlify.app/"
         />
         <Item
           type="Project"
           date="January 1, 2023"
-          title="Blurcasts"
+          title="Blurcasts (WIP)"
           description="Learn English with your favorite podcasts"
         />
       </article>

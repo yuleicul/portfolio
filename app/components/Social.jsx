@@ -7,9 +7,15 @@ function Social({ className = "" }) {
         className="h-35 w-35 hue-rotate-[var(--img-hue-rotate)]"
       />
       <div className="flex gap-3">
-        <div className="i-mdi-github text-3xl" />
-        <div className="i-mdi-youtube text-3xl" />
-        <div className="i-mdi-rss text-3xl" />
+        <a
+          className="i-mdi-github text-3xl"
+          href="https://github.com/yuleicul"
+        />
+        <a
+          className="i-mdi-youtube text-3xl"
+          href="https://www.youtube.com/@code_tuner"
+        />
+        {/* <a className="i-mdi-rss text-3xl" /> */}
       </div>
     </div>
   );
