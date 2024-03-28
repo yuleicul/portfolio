@@ -4,15 +4,15 @@ import Intro from "./components/Intro";
 
 export default function Home() {
   return (
-    <main className="font-merriweather">
-      <section className="flex justify-center items-center gap-40 py-26">
+    <main className="font-merriweather bg-brand-2 md:bg-inherit ">
+      <section className="flex flex-col justify-center items-center gap-5 md:gap-40 py-20 bg-brand-1 md:bg-inherit md:flex-row">
         <div className="text-brand-2 flex-1 flex justify-end">
           <Social />
         </div>
-        <Intro className="text-brand-1 flex-1 pt-16" />
+        <Intro className="text-brand-2 flex-1 pt-16 md:text-brand-1" />
       </section>
 
-      <article className="py-10">
+      <article className="py-15 w-90 mx-auto md:w-inherit max-w-[90%]">
         <Item
           type="Tutorial"
           date="April 1, 2024"

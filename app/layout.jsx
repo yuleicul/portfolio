@@ -23,8 +23,13 @@ export default function RootLayout({ children }) {
           "--img-hue-rotate": THEME[defaultTheme].hueRotate,
         }}
       >
-        <div className="min-h-screen sm:bg-gradient-to-r bg-gradient-to-b from-brand-1 from-50% to-brand-2 to-50%">
-          <Dropdown className="fixed left-1/2 -translate-x-1/2 sm:top-2 top-1/2 sm:translate-y-0 -translate-y-1/2" />
+        <div className="min-h-screen md:bg-gradient-to-r from-brand-1 from-50% to-brand-2 to-50%">
+          <Dropdown
+            className="
+              fixed top-5 right-5
+              md:right-1/2 md:translate-x-1/2
+            "
+          />
           {children}
         </div>
       </body>

@@ -10,14 +10,14 @@ function Dropdown({ className = "" }) {
 
   return (
     <div
-      className={`flex sm:flex-col sm:items-center ${className}`}
+      className={`flex flex-col ${className}`}
       tabIndex={0}
       onBlur={() => setDropdownVisible(false)}
     >
       <BicolorCircle
         from="brand-2"
         to="brand-1"
-        className={dropdownVisible ? "invisible" : ""}
+        className={dropdownVisible ? "rotate-180" : ""}
         onClick={() => setDropdownVisible((prev) => !prev)}
       />
       {dropdownVisible && (

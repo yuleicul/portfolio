@@ -15,8 +15,23 @@ export default defineConfig({
     presetWebFonts({
       provider: "google",
       fonts: {
-        montserrat: "Montserrat",
-        merriweather: "Merriweather",
+        montserrat: [
+          {
+            name: "Montserrat",
+            weights: [700, 800, 900],
+          },
+          {
+            name: "sans-serif",
+            provider: "none",
+          },
+        ],
+        merriweather: [
+          "Merriweather",
+          {
+            name: "serif",
+            provider: "none",
+          },
+        ],
       },
     }),
     presetTypography(),
